@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" onclick="reload()" class="company-logo">
+                <img src="assets/LIver-server.png" alt="company logo">
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input id="search-text" type="search-text"  class="news-input" placeholder="e.g. Science">
+                <button id="search-button" class="search-button" >Search</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <main>
+        <div class="cards-container container flex " id="cards-container">
+
+        </div>
+        </div>
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img class="img-head"
+                    src="https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2022/09/1-1662829467.jpg"
+                    alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">Virat Kohli</h3>
+                <h2 class="news-source" id="news-source">Indian cricketer 20/12/2023</h2>
+                <p class="news-desc" id="news-desc">In 2013, Kohli was ranked number one in the ICC rankings for ODI
+                    batsmen. In 2018, he was ranked top Test batsman, making him the only Indian cricketer to hold the
+                    number one spot in all three formats of the game. He is the first player to score 20,000 runs in a
+                    decade.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
